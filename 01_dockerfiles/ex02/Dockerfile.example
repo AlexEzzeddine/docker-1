@@ -1,0 +1,5 @@
+FROM ft_rails
+CMD ["rails", "s", "-b", "0.0.0.0"]
+
+# docker build -t dev_app -f Dockerfile.example .
+# docker run -it --rm -p 3000:3000 dev_app
