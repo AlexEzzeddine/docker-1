@@ -1,2 +1,2 @@
 docker-machine scp app.py Char:/home
-docker run --rm -d --name Abathur --mount type=bind,src=/home,dst=/root -p 3000:3000 --env FLASK_APP=app.py -w /root python:2-slim bash -c 'pip install flask && flask run -h 0.0.0.0 -p 3000'
+docker run --rm -it --name Abathur --mount type=bind,src=/home,dst=/root -p 3000:3000 --env FLASK_APP=app.py -w /root python:2-slim bash -c 'pip install flask && flask run -h 0.0.0.0 -p 3000'
